@@ -4,8 +4,6 @@ print("its working")
 
 """
 
-
-
 Valid Python Identifiers (including module names) 
 for the purpose of importing a python file:
 1) Must start with a letter (A–Z or a–z) or underscore (_)
@@ -20,7 +18,6 @@ The most widely used implementation of Python, written in C.
 It provides the standard interpreter and runtime environment.
 It’s designed to execute Python code, manage memory, and 
 interface with C libraries.
-
 
 """
 
