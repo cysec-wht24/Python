@@ -49,3 +49,66 @@ In python before calculation, all reference values are retreived
 Once that happens, the compute then goes to calculation, CPU or GPU, there are different ways and libraries that force you to do the calculation only on GPU or CPU
 When the result 7 is came its reference is assigned to variable a but the value 5 is not immediately removed it's removed after sometime
 
+>>> l1 = [1, 2, 3]
+>>> l2 = l1
+>>> l1
+[1, 2, 3]
+>>> l2
+[1, 2, 3]
+>>> l1[0] = 44
+>>> l1
+[44, 2, 3]
+>>> p1 = [1, 2, 3]
+>>> p2 = p1
+>>> p2 = [1, 2, 3]
+>>> p1[0] = 55
+>>> p1
+[55, 2, 3]
+>>> p2
+[1, 2, 3]
+lists are mutable, changeable thus if they are changed new references are made 
+
+>>> h1 = [1, 2, 3]
+>>> h2 = h1[:]
+>>> h1
+[1, 2, 3]
+>>> h2
+[1, 2, 3]
+
+Now here we have done slicing thus we have made a copy cause if we would have said h2 = h1 that would be giving the same reference but because we have done slicing we have made a copy of it and provided it's reference 
+
+>>> h1[0] = 55
+>>> h1
+[55, 2, 3]
+>>> h2
+[1, 2, 3]
+
+Debate on Copy
+>>> import copy
+>>> h2 = copy.copy(h1)
+
+there is something deeper copy which basically is calling listss from inside the list or nested list incase present 
+>>> import copy
+>>> h2 = copy.deepcopy(h1)
+
+>>> n = [1, 2, 3]
+>>> m = n
+>>> m
+[1, 2, 3]
+>>> n
+[1, 2, 3]
+>>> m == n
+True
+>>> m is n
+True
+>>> n = [1, 2, 3]
+>>> m == n
+True
+>>> m = [1, 2, 3]
+>>> m == n
+True
+>>> m is n
+False
+>>>
+All these concepts just to make you understand where you might be losing optimization in your code 
+In python everywhere there is  dynamic reference type that in which variable there willbe array or string or else as these definations are kept inside memory
