@@ -70,4 +70,9 @@ print(str(t))   # A hot cup of chai
 print(t)        # A hot cup of chai (because print uses str)
 ```
 
-Would you like a visual diagram showing how `str`, `repr`, and `print` relate?
+The bin() function in Python converts an integer to its binary representation (as a string, prefixed with '0b').
+
+Explore libraries
+-> random
+-> from decimal import Decimal
+-> from fractions import Fractions
