@@ -9,6 +9,7 @@ username = "hitesh"
 
 print(username)
 >>> 
+
 Now question for you - How did it know that the loop needs to end the moment it recieves empty string ?
 Because these are iteratable tools, inside these tools iterable programming is already done on how to read a file ?
 how when empty string '' comes then we need to stop and more
