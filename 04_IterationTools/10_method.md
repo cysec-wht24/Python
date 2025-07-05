@@ -18,5 +18,6 @@ range(0, 5)
 >>> next (I)
 Traceback (most recent call last):
 File "<stdin>", line 1, in <module>
-StopIteration
->>> |
+StopIteration 
+remember range is not inclusive
+>>>
