@@ -1,3 +1,4 @@
+Range is iterable as well
 >>> range(5)
 range(0, 5)
 >>> R = range[&)
@@ -5,9 +6,9 @@ range(0, 5)
 range(0, 5)
 >>> I = iter(R)
 >>> next(I)
-10}
+0
 >>> next(I)
-al
+1
 >>> next(I)
 2
 >>> next(I)
