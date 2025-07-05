@@ -1,10 +1,9 @@
 >>> f = open('chai.py')
->>> while True:
-
-line = f.xeadLine()
-if not line: break
-print(Line, en
-
+>>> while True
+... Line = f.readline()
+... if not line: break
+... print(line, end='')
+...
 import time
 print("chai is here")
 username = "hitesh"
