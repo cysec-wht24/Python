@@ -1,4 +1,8 @@
->>> myList = [1, 2, 3, 4]
+Lets go back to iteration tools
+we previously learned about functions for files - readline method, StopIteration exception and that file has its own iter() tool (this is default in python) eg - f = open(filename)
+Now lets discuss about Lists and arrays, which don't have their own iter() tool
+>>> myList = [1, 2, 3, 4] 
+Question is there must be iteration tools that work on this as well, so does here also __next__ also comes in handy ?
 >>> I = iter(myList)
 >>> I
 <list_iterator object at 0x102f4fa30>
