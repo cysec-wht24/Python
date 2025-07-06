@@ -51,7 +51,7 @@ Problem: Create a lambda function to compute the cube of a number.
 
 <details>
 <summary>
-7. Function with *args
+7. *Function with *args
 </summary>
 Problem: Write a function that takes variable number of arguments and returns their sum.
 </details>
@@ -59,7 +59,7 @@ Problem: Write a function that takes variable number of arguments and returns th
 
 <details>
 <summary>
-8. Function with **kwargs
+8. *Function with **kwargs
 </summary>
 Problem: Create a function that accepts any number of keyword arguments and prints them in the format key: value.
 </details>
@@ -67,7 +67,7 @@ Problem: Create a function that accepts any number of keyword arguments and prin
 
 <details>
 <summary>
-9. Generator Function with yield
+9. *Generator Function with yield
 </summary>
 Problem: Write a generator function that yields even numbers up to a specified limit.
 </details>
