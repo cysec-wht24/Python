@@ -25,3 +25,9 @@ def chai_stall():
 stall = chai_stall()
 print(next(stall))
 stall.close() #cleanup
+
+# yield
+# next()
+# send()
+# yield from
+# close
