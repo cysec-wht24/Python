@@ -18,3 +18,11 @@ menu = {
 
 iced_tea = [tea for tea in menu if "iced" in tea]
 print(iced_tea)
+
+result = [(x, y) for x in [1, 2, 3] for y in [3, 1, 4] if x != y]
+print(result)
+
+# []: Use when you want an ordered, indexable, mutable sequence (with possible duplicates).
+
+squares = [x**2 for x in range(5)]
+print(squares)  # ➜ [0, 1, 4, 9, 16]
