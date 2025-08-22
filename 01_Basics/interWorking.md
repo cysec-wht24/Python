@@ -1,4 +1,4 @@
-Say we have 2 variables with same value 10, now if we assign it to score then if we try toassign the same to a_score the python would rather than creating a new one would provide the same value's reference from the memory
+Say we have 2 variables with same value 10, now if we assign it to score then if we try to assign the same to a_score the python would rather than creating a new one would provide the same value's reference from the memory
 
 say we have a id with value 5 (id = 5), now say the use of id is complete we don't need it anymore in memory, so now as there is no refeerence left for 5, you would think python's garbage collector would deallocate that 5 right ? BUT here there is a change in python internal working so how does python compiler optimizes this ?  
 
