@@ -1,14 +1,3 @@
->>> result = 1/3.0
->>> result
-0.3333333333
->>> repr('chai')
-"'chai'"
->>> str('chai')
-'chai'
->>> print('chai')
-chai
->>> 
-
 Difference between `repr()`, `str()`, and `print()` in Python lies in **how objects are converted to strings**—especially when representing vs displaying them:
 
 ---
