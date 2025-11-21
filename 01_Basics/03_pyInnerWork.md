@@ -3,6 +3,16 @@
 # Python Inner Workings
 
 This document outlines the process that Python follows when running a script, including the compilation into bytecode and execution by the Python Virtual Machine (PVM). It also covers additional insights into the role of different Python implementations.
+When People refer to Python interpreter -> Compiler(Converts code -> bytecode) + PVM (runtime engine)(executes bytecode)
+It's creates a virtual machine for portability, safety and control, simplication in adding features (like generators, async, exceptions)
+
+---
+
+# How PVM creates virtual CPU ?
+while loop + switch-case + stack operations = virtual CPU
+The CPython interpreter is basically a big loop that reads bytecode and performs operations.
+Hardware CPUs do it in silicon.
+PVM does it in C code.
 
 ---
 
@@ -27,7 +37,7 @@ This document outlines the process that Python follows when running a script, in
     - Because bytecode is platform-independent, it can be executed on any system that has the appropriate version of the Python Virtual Machine.
 - **File Generation:**
   - **`.pyc` Files:**  
-    - Compiled bytecode files have the `.pyc` extension.  
+    - Compiled bytecode files have the `.pyc` extension.
     - They are sometimes referred to as "frozen binaries" since they contain ready-to-run code.
   - **`__pycache__` Folder:**  
     - Python organizes bytecode files in a dedicated directory called `__pycache__`.  
