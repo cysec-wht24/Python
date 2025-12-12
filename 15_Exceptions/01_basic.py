@@ -1,3 +1,10 @@
+# Types of Error:
+# Index Error
+# key Error
+# Zero Division Error
+# Type Error
+# Name Error
+
 chai_menu = {"masala": 30, "ginger": 40}
 
 try:
