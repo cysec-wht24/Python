@@ -41,3 +41,38 @@ def actually_arr():
 
 actually_arr()
 print(arr)
+
+
+def outer():
+    d = 10
+
+    def inner():
+        d = 20   # new local variable, NOT enclosing
+
+    inner()
+    print(d)
+
+outer()
+print("---------------------------")
+
+def something():
+    x = 10          # enclosing variable
+
+    def inner():
+        nonlocal x  # refer to enclosing x
+        x = 20
+
+    inner()
+    print(x)
+
+something()
+print("--------------------------")
+def outeasdr():
+    u = 10          # enclosing variable
+
+    def inner():
+        print(u)    # accessing enclosing variable
+
+    inner()
+
+outeasdr()
