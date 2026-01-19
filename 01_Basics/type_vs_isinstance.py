@@ -26,6 +26,10 @@ isinstance(d, Animal)      # True
 # Supports multiple types:
 isinstance(x, (int, float))
 
+d = "123"
+y = int(d)
+print(isinstance(y, int)) # True
+
 # | Feature           | type() | isinstance() |
 # | ----------------- | ------ | ------------ |
 # | Inheritance aware | ❌      | ✅            |
